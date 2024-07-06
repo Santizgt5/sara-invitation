@@ -17,6 +17,7 @@ var settings = {
     centerPadding: "80px",
     slidesToShow: 3,
     speed: 500,
+    arrows: false,
     responsive: [
         {
             breakpoint: 768,
@@ -27,6 +28,7 @@ var settings = {
                 centerPadding: "60px",
                 slidesToShow: 1,
                 speed: 500,
+                arrows: false,
             }
         }
 
@@ -37,7 +39,7 @@ export const Carrousel = ( {images}: Props ) => {
 
     return (
         <>
-            <div>
+            <div className="slider-container">
                 <Slider {...settings}>
                     {
                         images.map((image, index) => {
