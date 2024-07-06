@@ -2,6 +2,7 @@
 import './globals.css'
 import { Carrousel, PlayerWedding } from './components';
 import { Image } from './components/interface';
+import { title } from 'process';
 
 const firts_images: Image[] = [
   {
@@ -65,6 +66,11 @@ const thrid_images: Image[] = [
       image: '/assets/img/foto12.png'
   }
 ]
+
+export const metadata = {
+  title: 'Boda de David y Sara',
+  description: 'Invitación a la boda'
+}
 
 
 export default function Home() {
