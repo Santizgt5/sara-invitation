@@ -1,6 +1,6 @@
 
 import './globals.css'
-import { Carrousel } from './components';
+import { Carrousel, PlayerWedding } from './components';
 import { Image } from './components/interface';
 
 const firts_images: Image[] = [
@@ -71,6 +71,9 @@ export default function Home() {
   return (
     <>
       <main className="flex min-h-screen flex-col justify-between items-center px-10">
+        <section className='mt-10'>
+          <PlayerWedding></PlayerWedding>
+        </section>
         <section className='main'>
           <img className='iniciales-class' src="/assets/principal.png" alt="iniciales" />
         </section>
