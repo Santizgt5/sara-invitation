@@ -123,7 +123,9 @@ export default function Home() {
       </section>
       <div className='max-w-screen'>
       <section className="flex flex-col justify-between items-center">
-        <img className='h-auto my-10' src="/assets/asistencia.png" alt="" />
+        <a href="https://wa.me/573026482131">
+          <img className='h-auto my-10' src="/assets/asistencia.png" alt="whatsapp" />
+        </a>
       </section>
       </div>
     </>
