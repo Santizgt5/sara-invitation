@@ -3,18 +3,54 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+  background-image: url(../public/assets/fondo.png);
+  background-size: contain;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.iniciales-class {
+  
+  height: 100%;
+
 }
+
+
+.main {
+
+  height: 40vw;
+
+}
+
+.carrousel {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 40% 0%;
+
+}
+
+.carrousel-main {
+  background-image: url(../public/assets/fondo-fotos.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img {
+
+  display: flex;
+  gap: 18px;
+
+}
+
+.photo {
+
+  height: auto;
+
+}
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -31,3 +67,16 @@ body {
     text-wrap: balance;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  .main {
+
+    height: 75vw;
+  
+  }
+
+
+}
+
+
